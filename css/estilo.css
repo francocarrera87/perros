@@ -65,8 +65,21 @@
     color: blanchedalmond;
   }
 
-
-
+.index-main .container .right {
+  height: 600px;
+  left: auto;
+}
+.index-main .container .right img{
+  object-fit: contain;
+  border-radius: 50%;
+  background-color: beige;
+  border: 5px black;
+  box-shadow: 0 0 30px rgba(240, 240, 240, 0.5);
+  
+  
+  
+  
+}
   /*----------footer-------*/
   footer {
     background-color: #212528;
