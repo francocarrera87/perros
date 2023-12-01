@@ -1,0 +1,106 @@
+
+
+.logo {
+    max-width: 100px; 
+    height: auto;     /* Permite que la altura se ajuste automáticamente para mantener la proporción */
+  }
+.navbar {
+    background-color: rgb(243, 160, 105); /* Cambia el color de fondo de la barra de navegación */
+    padding-left: 8%;
+    padding-right: 8%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  }
+  
+  .navbar-nav .nav-link {
+    color: white !important; /* Añade !important para asegurarte de que esta regla tenga prioridad */
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+/*--------------carrucel---------------*/
+.carousel-item img {
+    border-radius: 50px;
+    padding: 1%;
+    margin:auto;
+    
+  }
+  
+ /*--------------index---------------*/
+
+ .container {
+    display: flex;
+    background-color: rgb(109, 172, 216);
+    margin-top: 2%;
+    border-radius: 50px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  }
+  
+  .left, .right {
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /*tarjeta1*/
+
+ .index-main h1 {
+    font-weight: bold; /* Hace que el texto del título sea negrita */
+    font-family: 'Arial', sans-serif; /* Cambia la tipografía del título a Arial o a la fuente que prefieras */
+    font-size: 50px; /* Modifica el tamaño del texto del título a 24 píxeles, ajusta según sea necesario */
+    color: blanchedalmond; /* Cambia el color del texto del título a naranja (o al color que prefieras) */
+  }
+  
+  .index-main .container .left p{
+    font-size: 26px; /* Modifica el tamaño del texto del párrafo a 16 píxeles, ajusta según sea necesario */
+    color: blanchedalmond;
+  }
+
+
+
+  /*----------footer-------*/
+  footer {
+    background-color: rgb(243, 160, 105);
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+  }
+  
+  .footer-section {
+    flex: 1;
+  }
+  .footer-section:first-child {
+    margin-left: 20px;
+  }
+  
+  
+  .footer-section h2 {
+    margin-bottom: 15px;
+  }
+  
+  .footer-section p, .footer-section li {
+    margin-bottom: 5px;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
