@@ -17,6 +17,7 @@
 }
 .index-main{
   background-color: #ffa73b;
+  box-shadow: 0 0 25px rgb(111, 55, 0)
 }
 
 /*----------------------header--------------------------*/
@@ -28,7 +29,7 @@
 .navbar-nav .nav-link {
   font-size: 22px; /* Ajusta el tamaño de la fuente según sea necesario */
   color: rgb(109, 62, 0)!important; /* Color del texto normal */
-  transition: color 0.3s ease-in-out; /* Transición suave del color */
+  transition: color 0.4s ease-in-out; /* Transición suave del color */
   font-weight: bold;
 }
 
@@ -53,12 +54,11 @@
 /* Estilos específicos para la sección "index" carta adopta*/
 .index-main .container {
   display: flex;
- 
   margin-top: 2%;
   margin-bottom: 2%;
-  border-radius: 50px;
+  margin-top: -23.8%;
   
-  margin-top: -20.5%;
+  
 }
 
 .index-main .container .left,
@@ -72,7 +72,7 @@
 }
 
 .index-main .container img {
-  max-width: 70%;
+  max-width: 80%;
 }
 
 .index-main h1 {
@@ -81,6 +81,7 @@
   font-size: 50px;
   color: rgb(255, 250, 242);
   margin-left: 5%;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .index-main .container .left p {
@@ -202,9 +203,9 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 7%;
   margin-top: -10%;
-  background-color: #fff1e1;
+  background-color: #fff3e6;
 }
 
 /* Estilos para la sección de bienvenida */
