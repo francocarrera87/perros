@@ -1,93 +1,110 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Pagina de Perros</title>
-    <link rel="stylesheet" href="./css/estilo.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="./css/estilo.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="barra-superior">
+      <div>
+        <ul>
+          <li><a href="#">Accesibilidad web</a></li>
+          <li><a href="#">Aviso de privacidad</a></li>
+          <li><a href="#">Condiciones de uso</a></li>
+          <li><a href="#">Mapa del sitio</a></li>
+        </ul>
+      </div>
+    </section>
     <header class="header">
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-          <div class="container-fluid">
-            <a class="navbar-brand mx-auto" href="#"><img src="./img/perretelogo.png" alt="Logo" class="logo"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Inicio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Adoptame loco</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Conócenos</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Donar</a>
-                </li>
-              </ul>
-            </div>
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container-fluid justify-content-center">
+          <a class="navbar-brand mx-auto" href="#">
+            <img src="./img/perretelogo.png" alt="Logo" class="logo"/>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto"> <!-- Utiliza mx-auto para centrar los elementos -->
+              <li class="nav-item">
+                <a class="nav-link" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Adopta</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Conócenos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Donar</a>
+              </li>
+            </ul>
           </div>
-        </nav>
-      </header>
+        </div>
+      </nav>
+    </header>
+    <section class="index-home">
+      <div class="index-home-img">
+        <img src="./img/imgindex/perroindex.png" alt="Descripción de la imagen" />
+      </div>
+      <div class="index-home-bienvenida">
+        <h1>Bienvenidos</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum blanditiis tempore at mollitia aspernatur omnis, ullam odio, dolor dolorum dolorem dolore adipisci nemo optio odit eaque sint! Consectetur, quae praesentium!</p>
+      </div>
       
       
       
-      
-      
-      
-      
+
+    </section>
 
     <main class="index-main">
-        <div class="container">
-            <div class="left">
-              <h1>Encuentra a tu Compañero Perfecto</h1>
-              <p>Brindar un hogar a animales callejeros y darles una segunda oportunidad. Adopta hoy y sé parte de la esperanza que cambia vidas.</p>
-            </div>
-            <div class="right">
-              <img src="./img/imgindex/patas.png" alt="Descripción de la imagen">
-            </div>
-          </div>
+      <div class="container">
+        <div class="left">
+          <h1>Encuentra a tu Compañero Perfecto</h1>
+          <p>
+            Brindar un hogar a animales callejeros y darles una segunda
+            oportunidad. Adopta hoy y sé parte de la esperanza que cambia vidas.
+          </p>
+          <a href="#" class="adopta-companero">Conoce a tu companero</a>
+        </div>
+        <div class="right">
+          <img src="./img/imgindex/patas.png" alt="Descripción de la imagen" />
+        </div>
+      </div>
+      <section class="container-adopta">
 
-          <section>
-            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="./img/imgindex/img1.jpeg" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./img/imgindex/img2.jpg" class="d-block w-100" alt="...">
-                  </div>
-                </div>
-              </div>
-          </section>
+      </section>
+
 
     </main>
 
     <footer>
-        <div class="footer-container">
-          <div class="footer-section">
-            <h2>Titulo</h2>
-            <p>Teléfono: ------</p>
-            <p>Email: --------</p>
-          </div>
-          <div class="footer-section">
-            <h2>Enlaces de utilidad</h2>
-            <ul>
-              <li><a href="#">Inicio</a></li>
-              <li><a href="#">Donar</a></li>
-              <li><a href="#">Perros en adopción</a></li>
-              <li><a href="#">Contacto</a></li>
-            </ul>
-          </div>
+      <div class="footer-container">
+        <div class="footer-section">
+          <h2>Titulo</h2>
+          <p>Teléfono: ------</p>
+          <p>Email: --------</p>
         </div>
-      </footer>
-      
+        <div class="footer-section">
+          <h2>Enlaces de utilidad</h2>
+          <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Donar</a></li>
+            <li><a href="#">Perros en adopción</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+    
+  </body>
 </html>

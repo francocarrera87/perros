@@ -1,121 +1,238 @@
 
+/* Estilos generales */
+
 .container {
-    display: flex;
-  }
+  display: flex;
   
-  .left, .right {
-    flex: 1;
-    padding: 10px;
-  }
-  
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  .logo {
-    max-width: 100px; 
-    height: auto;     /* Permite que la altura se ajuste automáticamente para mantener la proporción */
-  }
-/*--------------carrucel---------------*/
-.carousel-item img {
-    border-radius: 50px;
-    padding: 1%;
-    margin:auto;
-    
-  }
+}
 
-  img {/*modifica el tamanio de el carrucel*/
-    max-width: 90%;
-    height: auto;
-  }
-  
- /*--------------index---------------*/
+.left, .right {
+  flex: 1;
+  padding: 10px;
+}
 
- .container {
-    display: flex;
-    background-color: rgb(109, 172, 216);
-    margin-top: 2%;
-    border-radius: 50px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-  }
-  
-  .left, .right {
-    flex: 1;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  
+.logo {
+  max-width: 100px;
+  height: auto;
+}
+.index-main{
+  background-color: #ffa73b;
+}
 
+/*----------------------header--------------------------*/
 
-  /*tarjeta1*/
+.header .navbar{
+  background-color:rgba(162, 121, 44, 0)!important;
+}
+/* Modifica el tamaño y color de los elementos del navbar */
+.navbar-nav .nav-link {
+  font-size: 22px; /* Ajusta el tamaño de la fuente según sea necesario */
+  color: rgb(109, 62, 0)!important; /* Color del texto normal */
+  transition: color 0.3s ease-in-out; /* Transición suave del color */
+  font-weight: bold;
+}
 
- .index-main h1 {
-    font-weight: bold; /* Hace que el texto del título sea negrita */
-    font-family: 'Arial', sans-serif; /* Cambia la tipografía del título a Arial o a la fuente que prefieras */
-    font-size: 50px; /* Modifica el tamaño del texto del título a 24 píxeles, ajusta según sea necesario */
-    color: blanchedalmond; /* Cambia el color del texto del título a naranja (o al color que prefieras) */
-  }
+/* Agrega efecto de hover a los elementos del navbar */
+.navbar-nav .nav-link:hover {
+  color: #ff991c!important; 
+}
+
+/* Cambia el color del texto de la marca del navbar */
+.navbar-brand {
+  color: #ffffff; /* Color del texto normal */
+  transition: color 0.3s ease-in-out; /* Transición suave del color */
+}
+
+/* Agrega efecto de hover a la marca del navbar */
+.navbar-brand:hover {
+  color: #ffcc00; /* Cambia el color del texto al pasar el ratón sobre la marca */
+}
+
+/*-------------------------------------*/
+
+/* Estilos específicos para la sección "index" carta adopta*/
+.index-main .container {
+  display: flex;
+ 
+  margin-top: 2%;
+  margin-bottom: 2%;
+  border-radius: 50px;
   
-  .index-main .container .left p{
-    font-size: 26px; /* Modifica el tamaño del texto del párrafo a 16 píxeles, ajusta según sea necesario */
-    color: blanchedalmond;
-  }
+  margin-top: -20.5%;
+}
+
+.index-main .container .left,
+.index-main .container .right {
+  flex: 1;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.index-main .container img {
+  max-width: 70%;
+}
+
+.index-main h1 {
+  font-weight: bold;
+  font-family: 'Arial', sans-serif;
+  font-size: 50px;
+  color: rgb(255, 250, 242);
+  margin-left: 5%;
+}
+
+.index-main .container .left p {
+  font-size: 26px;
+  color: rgb(255, 246, 246);
+  margin-left: 5%;
+}
 
 .index-main .container .right {
   height: 600px;
   left: auto;
 }
-.index-main .container .right img{
+
+.index-main .container .right img {
   object-fit: contain;
   border-radius: 50%;
   background-color: beige;
-  border: 5px black;
-  box-shadow: 0 0 30px rgba(240, 240, 240, 0.5);
-  
-  
-  
+  box-shadow: 0 0 30px rgb(255, 249, 221);
+}
+
+/* Agrega este bloque de estilos para el botón en tu archivo de estilos CSS */
+
+.adopta-companero {
+  display: inline-block;
+  padding: 15px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+
+/* Estilo específico para el botón con la clase .adopta-companero */
+.adopta-companero {
+  margin-top: 10%;
+  margin-right: 15%;
+  background-color: #ff991c; /* Color de fondo verde */
+  color: #eaeaea; /* Color del texto blanco */
+  border: 5px #4CAF50; /* Borde verde */
+}
+
+.adopta-companero:hover {
+  background-color: #ffb65c00; /* Cambio de color de fondo al pasar el ratón sobre el botón */
+  color: #ffffff; /* Cambio de color del texto al pasar el ratón sobre el botón */
+  box-shadow: 0 0 5px rgba(255, 249, 221, 0.612);
+}
+
+
+
+
+/*----------footer-------*/
+footer {
+  background-color: #212528;
+  color: #b9bfc6;
+  padding: 20px 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+
+.footer-section {
+  flex: 1;
+}
+.footer-section:first-child {
+  margin-left: 20px;
+}
+
+
+.footer-section h2 {
+  margin-bottom: 15px;
+}
+
+.footer-section p, .footer-section li {
+  margin-bottom: 5px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+/*---------barra spam-------*/
+.barra-superior {
+  background-color: #f0f0f0; /* Cambia el color de fondo según tus preferencias */
+  padding: 10px;
+}
+
+.barra-superior ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.barra-superior li {
+  margin-right: 20px;
+}
+
+.barra-superior a {
+  text-decoration: none;
+  color: #000;
+}
+
+
+/*--------------------*/
+/* Estilos para el contenedor principal de la sección */
+.index-home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin-top: -10%;
+  background-color: #fff1e1;
+}
+
+/* Estilos para la sección de bienvenida */
+.index-home-bienvenida {
+  flex: 1;
+  text-align: left;
+}
+
+.index-home-bienvenida h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
   
 }
-  /*----------footer-------*/
-  footer {
-    background-color: #212528;
-    color: #b9bfc6;
-    padding: 20px 0;
-  }
+
+.index-home-bienvenida p {
+  font-size: 18px;
+  padding-bottom: 50%;
+}
+
+/* Estilos para la sección de la imagen */
+.index-home-img {
+  flex: 1;
+  text-align: left;
+}
+
+.index-home-img img {
+  max-width: 75% !important;
+  height: auto;
+  border-radius: 10px;
   
-  .footer-container {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 15px;
-  }
-  
-  .footer-section {
-    flex: 1;
-  }
-  .footer-section:first-child {
-    margin-left: 20px;
-  }
-  
-  
-  .footer-section h2 {
-    margin-bottom: 15px;
-  }
-  
-  .footer-section p, .footer-section li {
-    margin-bottom: 5px;
-  }
-  
-  .footer-section ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .footer-section a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
+}
