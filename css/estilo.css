@@ -336,7 +336,7 @@ footer {
 }
 
 .info-adopcion-item{
-  background-color: #eeeeee;
+  background-color: #fff3e6;
   box-shadow: 0 0 5px rgb(160, 160, 160);
 }
 .info-adopcion-item:hover {
@@ -402,10 +402,14 @@ footer {
 
 .info-adopcion-item h4 {
   margin-bottom: 10px;
+  text-align: left;
+  margin-left: 5%;
 }
 
 .info-adopcion-item p {
   margin: 0;
+  text-align: left;
+  margin-left: 5%;
 }
 
 
