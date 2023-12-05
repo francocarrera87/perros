@@ -16,8 +16,8 @@
   height: auto;
 }
 .index-main{
-  background-color: #7097a8;
-  box-shadow: 0 0 25px rgb(1, 51, 116)
+  background-color: rgb(255, 189, 66);
+  box-shadow: 0 0 25px rgb(113, 113, 113)
 }
 
 /*----------------------header--------------------------*/
@@ -277,7 +277,6 @@ footer {
   font-size: 28px;
   padding-bottom: 50%;
   color: #ffffff;
-  text-shadow: 2px 2px 10px rgb(167, 167, 167);
   font-weight: bold;
 }
 
@@ -333,23 +332,48 @@ footer {
   text-align: center; /* Centra el contenido en el eje horizontal */
   margin: 5%;
   padding-bottom: 5%;
-  background-color: ;
+  
 }
 
 .info-adopcion-item{
   background-color: #eeeeee;
   box-shadow: 0 0 5px rgb(160, 160, 160);
 }
+.info-adopcion-item:hover {
+  background-color: #f0f0f0; /* Cambia el color de fondo al pasar el ratón sobre la carta */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Agrega una sombra al pasar el ratón sobre la carta */
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Agrega transiciones suaves */
+}
+
 
 .info-adopcion-titulo {
   grid-column: span 2;
 }
 
+.info-adopcion-titulo h2{
+  font-weight: bold;
+  font-size: 40px;
+  color: #ffffff;
+  text-shadow: 2px 2px 10px rgba(174, 174, 174, 0.405)
+
+}
+
 .info-adopcion-titulo h2,
 .info-adopcion-titulo p {
   margin: 0; /* Elimina el margen predeterminado para mejorar la apariencia */
-  text-align: center;
-  
+  text-align: center; 
+}
+.info-adopcion-titulo p{
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.info-adopcion-titulo h2 {
+  border-bottom: 4px solid #ffffff; /* Cambia el color del subrayado según tus preferencias */
+  border-radius: 2px;
+  padding-bottom: 7px; /* Ajusta el espacio entre el texto y el subrayado */
+  margin-left:15% ;
+  margin-right: 15%;
 }
 
 
@@ -383,3 +407,17 @@ footer {
 .info-adopcion-item p {
   margin: 0;
 }
+
+
+.info-adopcion-item {
+  position: relative; /* Añade posición relativa para posicionar elementos internos */
+  overflow: hidden; /* Oculta el contenido que desborda */
+  border-radius: 10px; /* Borde redondeado */
+  transition: transform 0.3s ease-in-out; /* Agrega una transición suave al transformar */
+}
+
+/* Añade la animación para la carta cuando se pasa el ratón sobre ella */
+.info-adopcion-item:hover {
+  transform: scale(1.01); /* Escala la carta al 105% cuando el ratón está sobre ella */
+}
+
